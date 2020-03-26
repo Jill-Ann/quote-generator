@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>quote generator</title>
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SpongeBob Quote Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Sen:400,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="title">SpongeBob Random Quote Generator</h1>
+      </div> <!-- end of heading col -->
+    </div> <!-- end of heading row -->
+
+    <div class="row">
+
+      <!-- patrick -->
+
+      <div class="col-sm-6 pat-column">
+
+        <div class="row">
+          <!-- patrick quote -->
+          <div class="col quote-box-container text-center" >
+            <div class="quote-box" id="quote-display-patrick"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- patrick image -->
+          <div class="col-6 character d-flex justify-content-center">
+            <img id="image-patrick" src="images/patrick.png" alt="patrick">
+          </div>
+          <!-- patrick button -->
+          <div class="col-6 d-flex align-items-center">
+            <button type="button" id="quote-patrick" class="new-quote-btn button">Inspire me, Patrick!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- spongebob -->
+
+      <div class="col-sm-6 sponge-column">
+
+        <div class="row">
+          <!-- spongebob quote -->
+          <div class="col quote-box-container text-center" >
+            <div class="quote-box" id="quote-display-spongebob"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- spongebob button -->
+          <div class="col-6 d-flex align-items-center justify-content-end">
+            <button type="button" id="quote-spongebob" class="new-quote-btn button">Inspire me, SpongeBob!</button>
+          </div>
+          <!-- spongebob image -->
+          <div class="col-6 character d-flex justify-content-center">
+            <img id="image-spongebob" src="images/spongebob.png" alt="spongebob squarepants">
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end of main row -->
+  </div><!-- end of container -->
+
+  <script src="script.js"></script>
+</body>
 </html>
